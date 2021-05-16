@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 20%;
+}
+#menu_nom{
+    margin:10%;
+}
+#menu_text{
+    margin-bottom: 1%;
+}
+
+#gameboard{
+    max-height: 100%;
+    max-width: 100%;
+    background: rgb(24, 24, 37);
+    margin: 1%;
+    border: 10px solid black;
+}
+
+#clonedboard{
+    max-height: 100%;
+    max-width: 100%;
+    background: rgb(24, 24, 37);
+    margin: 1%;
+    border: 10px solid blue;
+}
+#instructions{
+    margin: 1%;
+}
+
+.count {
+    fill: lightYellow;
+    font: 20px Consolas, monospace;
+    margin-left: 10%    ;
+}
+#timer, #scoreboard {
+    font-size: 300%;
+    transition: font-size 1s;
+}
+#timer[aria-live] {
+    animation: flash-color 0.3s alternate infinite;
+}
+.clicked {
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.game-over #scoreboard {
+    font-size: 500%;
+}
+.win{color: green;}
+.lose{color: red;}
+
+#result{    
+    font: 50px Consolas, monospace;
+}
+@keyframes flash-color {
+    to { color: tomato; }
+}
+.game-over .non-clickable { fill: black; }
+.game-over .clickable{filter: drop-shadow(0 0 10px red);}
+.game-over .clicked {
+    opacity: 1;
+    filter: drop-shadow(0 0 5px gold);
+}
