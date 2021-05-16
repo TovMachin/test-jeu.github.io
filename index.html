@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu des Differences</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1 id="menu_nom">Jeu des Différences</h1>
+        <h3 id="menu_text" class="menu"></h3>
+        <button id="menu_trigger" class="menu" type="button">JOUER</button>
+        <button id="menu_options" class="menu" type="button">OPTIONS</button>
+    </div>
+    <h2 id="instructions"></h2>
+    <svg xmlns="http://www.w3.org/2000/svg" xml:lang="fr" xmlns:xlink="http://www.w3.org/1999/xlink" id="gameboard" width="0px" height="0px"></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" xml:lang="fr" xmlns:xlink="http://www.w3.org/1999/xlink" id="clonedboard" width="0px" height="0px"></svg>
+    <br>
+    <text class="count" role="timer" aria-atomic="true"
+          x="100%" y="0.9em" text-anchor="end">Temps restant:<tspan x="0">
+        </tspan><tspan id="timer" x="100%" dy="0.9em">00.0</tspan>s
+    </text>
+    <text class="count" role="status" aria-atomic="true"
+          y="100%" dy="-0.1em" text-anchor="start"
+          ><tspan id="scoreboard">0</tspan> trouvés
+    </text>
+    <text class="result" id="result" role="end" aria-atomic="true"></text>
+
+
+</body>
+<script src="script.js"></script>
+</html>
